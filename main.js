@@ -27,52 +27,96 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+let mySwiper = new Swiper('.swiper-container', {
+  effect: 'cube',
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+})
 
 
 !(function($) {
     "use strict";
-    $(document).ready(function() {
-        $('.screenshot-items').slick({
-            centerMode : true
-        }) ;
-    }) ;
+    var nav = $('nav');
+    var navHeight = nav.outerHeight();
 
+	// Closes responsive menu when a scroll trigger link is clicked
+	$('.js-scroll').on("click", function () {
+		$('.navbar-collapse').collapse('hide');
+	});
 
-    $('.center').slick({
-        centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots : true ,
-        centerPadding: '60px',
-        slidesToShow: 5,
-        responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 5
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 5
-            }
+	// Activate scrollspy to add active class to navbar items on scroll
+	$('body').scrollspy({
+		target: '#mainNav',
+		offset: navHeight
+	});
+	/*--/ End Scrolling nav /--*/
+
+	/*--/ Navbar Menu Reduce /--*/
+	$(window).trigger('scroll');
+	$(window).on('scroll', function () {
+		var pixels = 50; 
+		var top = 1200;
+		if ($(window).scrollTop() > pixels) {
+			$('.navbar-expand-lg').addClass('navbar-reduce');
+			$('.navbar-expand-lg').removeClass('navbar-trans');
+		} else {
+			$('.navbar-expand-lg').addClass('navbar-trans');
+			$('.navbar-expand-lg').removeClass('navbar-reduce');
+		}
+		if ($(window).scrollTop() > top) {
+			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+		} else {
+			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
+		}
+	});
+
+    $('.navbar-toggler').on('click', function() {
+        if( ! $('#mainNav').hasClass('navbar-reduce')) {
+        $('#mainNav').addClass('navbar-reduce');
         }
-        ]
-        
-    });
-    $('.autoplay').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
+    })
+
+  // Review carousel (uses the Owl Carousel library)
+  $('.owl-client').owlCarousel({
+    animateOut: 'fadeOut',
+    dots : true ,
+    loop: true,
+    autoplayHoverPause: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      767: {
+        items: 2,
+	  },
+	  992: {
+		  items: 3,
+	  }
+    }
+  });
+
+
+
+
+
+
+
 
 })(jQuery);
 new WOW().init();

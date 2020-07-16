@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="plugins/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
-    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
-    <link rel="stylesheet" href="plugins/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-trans def-navbar" id="mainNav">
+    <!-- navigation bar --> 
+    <nav class="navbar navbar-expand-lg fixed-top navbar-trans def-navbar" id="mainNav">
         <div class="container">
             <a class="navbar-brand def-header" href="#page-top">
-                <!-- <img src="plugins/images/Asset 1.svg" alt="" class="logo"> -->
-                <h3>Love O'Clock</h3>
+
+                <img src="plugins/images/new/Group 142.png" alt="" class="logo">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <div class="navbar-collapse" id="navbarDefault">
+            <div class="navbar-collapse collapse" id="navbarDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll active" href="#screenshot">Screenshots</a>
@@ -54,8 +54,8 @@
     <!-- Hero section -->
     <section id="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
+            <div class="d-flex  intro-wrap"> 
+                <div class="intro-box">
                     <div class="hero-box">
                         <h2 class="mb-3">Get a signal from someone within 10-metre radius that loves 
                             you or has a crush on you.
@@ -73,11 +73,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-1"></div>
-
-                <div class="col-md-6 right-text">
-                    <div class="text-right img-box">
+                <div class="right-text cv">
+                    <div class=" img-box">
                         <img src="plugins/images/eclipses/Ellipse 38.svg" class="ab6" alt="">
                         <img src="plugins/images/eclipses/Ellipse 42.svg" class="ab4" alt="">
                         <img src="plugins/images/eclipses/Ellipse 41.svg" class="ab1" alt="">
@@ -85,7 +82,7 @@
                         <img src="plugins/images/eclipses/Ellipse 40.svg" class="ab3" alt="">
                         <img src="plugins/images/eclipses/Ellipse 43.svg" class="ab5" alt="">
 
-                        <img src="plugins/images/love oclock/02.png" alt="" class="img-fluid hero-img">
+                        <img src="plugins/images/new/01.png" alt="" class=" hero-img">
 
                     </div>
                 </div>
@@ -94,7 +91,7 @@
     </section>
     <!-- End of Hero section -->
 
-    <!-- App screenshots section
+    <!-- App screenshots section -->
     <section id="screenshot">
         <div class="container">
             <div class="row">
@@ -104,28 +101,46 @@
                     </div>
                 </div>
             </div>
-            <div class="screenshot-items">
-                <div>
-                    <img src="plugins/images/iPhone 11 Pro/X - 25.png" alt="">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="plugins/images/iPhone 11 Pro/X - 25.png" data-lightbox="screenshot-mf">
+                        <img src="plugins/images/iPhone 11 Pro/X - 25.png" alt="">
+                    </a>
                 </div>
-                <div>
-                    <img src="plugins/images/iPhone 11 Pro/X - 27.png" alt="">
+                <div class="swiper-slide">
+                    <a href="plugins/images/iPhone 11 Pro/X - 27.png" data-lightbox="screenshot-mf">
+                        <img src="plugins/images/iPhone 11 Pro/X - 27.png" alt="">
+                    </a>
                 </div>
-                <div>
-                    <img src="plugins/images/iPhone 11 Pro/X - 31.png" alt="">
+                <div class="swiper-slide">
+                    <a href="plugins/images/iPhone 11 Pro/X - 31.png" data-lightbox="screenshot-mf">
+                        <img src="plugins/images/iPhone 11 Pro/X - 31.png" alt="">
+                    </a>
                 </div>
-                <div>
-                    <img src="plugins/images/iPhone 11 Pro/X - 30.png" alt="">
+                <div class="swiper-slide">
+                    <a href="plugins/images/iPhone 11 Pro/X - 30.png" data-lightbox="screenshot-mf">
+                        <img src="plugins/images/iPhone 11 Pro/X - 30.png" alt="">
+                    </a>
                 </div>
-                <div>
-                    <img src="plugins/images/iPhone 11 Pro/X - 32.png" alt="">
+                <div class="swiper-slide">
+                    <a href="plugins/images/iPhone 11 Pro/X - 32.png" data-lightbox="screenshot-mf">
+                        <img src="plugins/images/iPhone 11 Pro/X - 32.png" alt="">
+                    </a>
                 </div>
-
             </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
 
         </div>
     </section>
-    App screenshots section -->
+    <!-- App screenshots section -->
  
     <!-- Features section -->
     <section id="feature">
@@ -138,7 +153,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-center feature-box">
-                        <img src="plugins/images/love oclock (1)/noun_Love Search_2201439 1.svg" alt="">
+                        <img src="plugins/images/love oclock (1)/noun_Love Search_2201439 1.svg" class="feature-img" alt="">
                         <div>
                             <h4>See who loves you</h4>
                             <p>Fast way to know if that guy or girl that you love loves you back. 
@@ -149,7 +164,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-center feature-box">
-                        <img src="plugins/images/love oclock (1)/Group 70.svg" alt="">
+                        <img src="plugins/images/love oclock (1)/Group 70.svg" class="feature-img" alt="">
                         <div>
                             <h4>Get to read your lover's mind</h4>
                             <p> Get that thing that is bugging your lover, 
@@ -160,7 +175,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-center feature-box">
-                        <img src="plugins/images/love oclock (1)/Group 87.svg" alt="">
+                        <img src="plugins/images/love oclock (1)/Group 87.svg" class="feature-img" alt="">
                         <div>
                             <h4>Know your crush</h4>
                             <p> Know the number of people that have a crush on you within your love sphere</p>
@@ -186,11 +201,11 @@
                 </div>
                 <div class="col-md-5">
                     <div class="get-box">
-                        <img src="plugins/images/love oclock/02.png" alt="" class="img-fluid get-img">
-                        <img src="plugins/images/messaging/Group 97.png" alt="" class="abb1">
-                        <img src="plugins/images/messaging/Group 98.png" alt="" class="abb2">
-                        <img src="plugins/images/messaging/Group 99.png" alt="" class="abb3">
-                        <img src="plugins/images/messaging/Group 100.png" alt="" class="abb4">
+                        <img src="plugins/images/new/01.png" alt="" class=" get-img">
+                        <img src="plugins/images/messaging/Group 97.png" alt="" class="abb1 wow fadeIn" data-wow-delay="7s">
+                        <img src="plugins/images/messaging/Group 98.png" alt="" class="abb2 wow fadeIn" data-wow-delay="10s">
+                        <img src="plugins/images/messaging/Group 99.png" alt="" class="abb3 wow fadeIn" data-wow-delay="1s">
+                        <img src="plugins/images/messaging/Group 100.png" alt="" class="abb4 wow fadeIn" data-wow-delay="3s">
                     </div>
                 </div>
             </div>
@@ -214,7 +229,7 @@
                 </div>
                 <div class="col-md-6">
                     <div>
-                        <img src="plugins/images/love oclock/06.png" class="img-fluid" alt="" class="comm-img">
+                        <img src="plugins/images/love oclock/06.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -267,53 +282,78 @@
             </div>
         </div>
     </section>
-    <!-- Are you a celebrity section -->
-<!-- 
-     How the app works section
+    <!-- End of Are you a celebrity section -->
+
+     <!-- How the app works section -->
     <section id="how">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
-                        <h3> How The App Works</h2>
-                    </div>
+            <div class="text-center">
+                <div class="section-header">
+                    <h3> How The App Works</h2>
                 </div>
-                <div class="col-3">
-                    <div>
-                        <h3 class=" num-box text-center">1</h3>
-                        <p>Download the App</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <div> <h3>2</h3> </div>
-                        <p>Sign Up / Sign In</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <div> <h3>3</h3> </div>
-                        <p>Turn on Search (Start)</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <div> <h3>4</h3> </div>
-                        <p>See your lover / crush</p>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="navbar navbar-expand justify-content-center">
+                <div class="row">
+                    <div class="col-md-12 how-box ">
+                        <ul class="navbar-nav text-center justify-content-center ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <li class="">
+                                        <p class="first-para">1</p>
+                                        <p class="second-para mb-4">Download the App </p>
+                                    </li>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <li class="mum-box"> 
+                                        <p class="first-para"> 2 </p>
+                                        <p class="second-para mb-4"> Sign Up / Sign In </p>    
+                                    </li>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <li class=" ">
+                                        <p class="first-para"> 3 </p>
+                                        <p class="second-para mb-4"> Turn on Search (Start) </p>    
+                                    </li>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <li class=" ">
+                                        <p class="first-para"> 4 </p>
+                                        <p class="second-para mb-4"> See your lover / crush </p>    
+                                    </li>
+                                </div>
+
+                            </div>
+
+                        </ul>
+                        <svg class="how-icon1" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.842257 31.409C1.09511 31.5963 1.39538 31.745 1.7259 31.8464C2.05642 31.9478 2.4107 32 2.76849 32C3.12628 32 3.48056 31.9478 3.81108 31.8464C4.14159 31.745 4.44186 31.5963 4.69472 31.409L23.2015 17.7205C23.4546 17.5334 23.6555 17.3111 23.7925 17.0665C23.9295 16.8218 24 16.5596 24 16.2948C24 16.0299 23.9295 15.7677 23.7925 15.5231C23.6555 15.2784 23.4546 15.0562 23.2015 14.869L4.69472 1.18057C4.44418 0.985727 4.14349 0.829985 3.81035 0.722517C3.47722 0.615049 3.11839 0.558035 2.75501 0.554831C2.39164 0.551626 2.03108 0.602301 1.69458 0.703863C1.35808 0.805428 1.05246 0.955826 0.795727 1.14619C0.538994 1.33656 0.336344 1.56304 0.199726 1.81229C0.0631065 2.06154 -0.00471497 2.32852 0.000255585 2.59748C0.00522614 2.86644 0.0828876 3.13193 0.228666 3.37833C0.374445 3.62472 0.58539 3.84702 0.849064 4.03211L17.4296 16.2948L0.849064 28.5574C0.59548 28.7442 0.394133 28.9662 0.256536 29.2107C0.11894 29.4552 0.0477905 29.7173 0.0471573 29.9821C0.046526 30.247 0.116426 30.5093 0.252855 30.7541C0.389282 30.999 0.589565 31.2215 0.842257 31.409Z" fill="#C4C4C4" fill-opacity="0.36"/>
+                        </svg>
+                        <svg class="how-icon2" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.842257 31.409C1.09511 31.5963 1.39538 31.745 1.7259 31.8464C2.05642 31.9478 2.4107 32 2.76849 32C3.12628 32 3.48056 31.9478 3.81108 31.8464C4.14159 31.745 4.44186 31.5963 4.69472 31.409L23.2015 17.7205C23.4546 17.5334 23.6555 17.3111 23.7925 17.0665C23.9295 16.8218 24 16.5596 24 16.2948C24 16.0299 23.9295 15.7677 23.7925 15.5231C23.6555 15.2784 23.4546 15.0562 23.2015 14.869L4.69472 1.18057C4.44418 0.985727 4.14349 0.829985 3.81035 0.722517C3.47722 0.615049 3.11839 0.558035 2.75501 0.554831C2.39164 0.551626 2.03108 0.602301 1.69458 0.703863C1.35808 0.805428 1.05246 0.955826 0.795727 1.14619C0.538994 1.33656 0.336344 1.56304 0.199726 1.81229C0.0631065 2.06154 -0.00471497 2.32852 0.000255585 2.59748C0.00522614 2.86644 0.0828876 3.13193 0.228666 3.37833C0.374445 3.62472 0.58539 3.84702 0.849064 4.03211L17.4296 16.2948L0.849064 28.5574C0.59548 28.7442 0.394133 28.9662 0.256536 29.2107C0.11894 29.4552 0.0477905 29.7173 0.0471573 29.9821C0.046526 30.247 0.116426 30.5093 0.252855 30.7541C0.389282 30.999 0.589565 31.2215 0.842257 31.409Z" fill="#C4C4C4" fill-opacity="0.36"/>
+                        </svg>
+                        <svg class="how-icon3" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.842257 31.409C1.09511 31.5963 1.39538 31.745 1.7259 31.8464C2.05642 31.9478 2.4107 32 2.76849 32C3.12628 32 3.48056 31.9478 3.81108 31.8464C4.14159 31.745 4.44186 31.5963 4.69472 31.409L23.2015 17.7205C23.4546 17.5334 23.6555 17.3111 23.7925 17.0665C23.9295 16.8218 24 16.5596 24 16.2948C24 16.0299 23.9295 15.7677 23.7925 15.5231C23.6555 15.2784 23.4546 15.0562 23.2015 14.869L4.69472 1.18057C4.44418 0.985727 4.14349 0.829985 3.81035 0.722517C3.47722 0.615049 3.11839 0.558035 2.75501 0.554831C2.39164 0.551626 2.03108 0.602301 1.69458 0.703863C1.35808 0.805428 1.05246 0.955826 0.795727 1.14619C0.538994 1.33656 0.336344 1.56304 0.199726 1.81229C0.0631065 2.06154 -0.00471497 2.32852 0.000255585 2.59748C0.00522614 2.86644 0.0828876 3.13193 0.228666 3.37833C0.374445 3.62472 0.58539 3.84702 0.849064 4.03211L17.4296 16.2948L0.849064 28.5574C0.59548 28.7442 0.394133 28.9662 0.256536 29.2107C0.11894 29.4552 0.0477905 29.7173 0.0471573 29.9821C0.046526 30.247 0.116426 30.5093 0.252855 30.7541C0.389282 30.999 0.589565 31.2215 0.842257 31.409Z" fill="#C4C4C4" fill-opacity="0.36"/>
+                        </svg>
+
+
+                    </div>    
+                </div>
+            </div>
+
         </div>
     </section>
-    End of How the app works section
+    <!-- End of How the app works section -->
 
-     Review section
+    <!-- Review section -->
     <section id="review">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div>
+                    <div class="section-header">
                         <h3>Results From Our App Testing</h3>
                     </div>
                 </div>
@@ -322,7 +362,7 @@
                     <div class="col-md-12 col-sm-12 mt-5">
                         <div class="review-thumb">
                             <div class="review-head">
-                                <span><img src="plugins/images/Rectangle 48.jpg" class="img-responsive" alt=""></span>
+                                <span><img src="plugins/images/new/fav.jpg" class="img-responsive review-img" alt=""></span>
                             </div>
                             <div class="test-para">
                                 <p> This is the best app for reading your lover’s mind,
@@ -338,7 +378,7 @@
                     <div class="col-md-12 col-sm-12 mt-5">
                         <div class="review-thumb">
                             <div class="review-head">
-                                <span><img src="plugins/images/Rectangle 48.jpg" class="img-responsive" alt=""></span>
+                                <span><img src="plugins/images/new/fav.jpg" class="img-responsive review-img" alt=""></span>
                             </div>
                             <div class="test-para">
                                 <p> This app has helped me understand my wife better... No 
@@ -354,7 +394,7 @@
                     <div class="col-md-12 col-sm-12 mt-5">
                         <div class="review-thumb">
                             <div class="review-head">
-                                <span><img src="plugins/images/Rectangle 48.jpg" class="img-responsive" alt=""></span>
+                                <span><img src="plugins/images/new/fav.jpg" class="img-responsive review-img" alt=""></span>
                             </div>
                             <div class="test-para">
                                 <p> This is the best app for reading your lover’s mind,
@@ -370,7 +410,7 @@
                     <div class="col-md-12 col-sm-12 mt-5">
                         <div class="review-thumb">
                             <div class="review-head">
-                                <span><img src="plugins/images/Rectangle 48.jpg" class="img-responsive" alt=""></span>
+                                <span><img src="plugins/images/new/fav.jpg" class="img-responsive review-img" alt=""></span>
                             </div>
                             <div class="test-para">
                                 <p> This is the best app for reading your lover’s mind,
@@ -386,7 +426,7 @@
             </div>
         </div>
     </section>
-    End of Review section  -->
+    <!-- End of Review section  -->
 
     <!-- Countdown timer -->
     <section id="countdown">
@@ -398,64 +438,67 @@
                 <p id="demo"></p>
             </div>
             <div>
-                <!-- <h3>Get An Invite To Download The App</h3>
 
-                <div class="form-box">
+                <div class="section-header get-head mt-4"><h3>Get An Invite To Download The App</h3></div>
+
+                <div class="count-form-box mb-4">
                     <form action="download.php" role="form" id="form" name="register" method="post">
                         <div class="input-group hero-form">
-                            <input type="email" name="email" id="email" class="form-control" >
+                            <input type="email" name="email" placeholder="Enter your email" id="email" class="form-control hero-form-input" >
                             <div class="input-group-append">
                                 <button type="submit" name="submit" class="btn-pink">Send</button>
                             </div>
                         </div>
                     </form>
-                </div> -->
-
+                </div>
             </div>
-            <hr>
+            <hr class="mt-5">
         </div>
     </section>
     <!-- End of Countdown timer -->
 
-    <!-- Footer 
+     <!-- Footer  -->
     <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-flex">
-                        <a href="#">
+                        <a href="#" class="ml-auto">
                             <img src="plugins/images/icons8-instagram-24.png" alt="">
                         </a>
                         <a href="">
                             <img src="plugins/images/icons8-twitter-squared-24.png" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#" class="mr-auto">
                             <img src="plugins/images/icons8-facebook-24.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div>
+            </div>
+            <div class="row">
+                <div class="col-md-4  footlink">
+                    <div class="text-center">
                         <p>LoveoClock@gmail.com </p>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div>
+                <div class="col-md-3 order-last order-md-first">
+                    <div class="text-center footlink">
                         <p>+234 816 624 5118 </p>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div>
+                <div class="col-md-5 order-first order-md-last footlink">
+                    <div class="text-center">
                         <p>5, Louis Andree Street, Vetiga, Los Angeles</p>
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center">
+                    <div class="text-center foot">
                         <ul>
                             <li>2010-2020</li>
-                            <li>BO</li>
+                            <li>BO/Neutrino</li>
                             <li>Privacy</li>
                         </ul>
 
@@ -464,7 +507,7 @@
             </div>
         </div>
     </section>
-    End of Footer -->
+    <!-- End of Footer  -->
 
     <script src="plugins/bootstrap/js/jquery-3.5.1.min.js"></script>
     <script src="plugins/bootstrap/js/jquery-migrate-1.2.1.min.js"></script>
@@ -474,7 +517,8 @@
     <script src="plugins/lightbox/js/lightbox.min.js"></script>
     <script src="plugins/wow/wow.min.js"></script>
     <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
-    <script src="plugins/slick/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
 </body>
