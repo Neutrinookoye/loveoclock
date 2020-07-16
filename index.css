@@ -142,16 +142,19 @@
     font-size: 18px;
     line-height: 27px;
     height: 60px;
+    background: white;
     color: #1f1f1f;
 }
 
 .hero-form-input::placeholder {
+    padding-left: 1rem;
     color: rgba(82, 82, 82, 0.31);
 }
 
 .hero-form-input:focus {
-    border: 1px solid  #1f1f1f;
+    border: 1px solid  #f36b69;
     box-shadow: none;
+    background: white;
 }
 
 .img-box {
@@ -433,8 +436,7 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;
-    text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .feature-box {
@@ -476,7 +478,7 @@
     color: #1F1F1F;
 }
 
-#get-invite h4 {
+#get-invite h3 {
     margin-top: 6rem;
 }
 
@@ -554,13 +556,13 @@
 
 
 .comm-body {
-    padding-right: 15rem;
+    padding-right: 8rem;
 }
 
-#communication h4 {
-    margin-top: 10rem;
+#communication h3 {
+    margin-top: 8rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
     line-height: 54px;    
 }
@@ -1125,9 +1127,11 @@
 .first-para {
     border: 3px solid #ffaead;
     border-radius: 50%;
-    padding: 1rem 1.5rem ;
+    padding: 1rem 1.8rem ;
     display: inline-block;
     text-align: center;
+    font-size: 36px;
+    line-height: 43px;
 }
 
 .second-para {
@@ -1177,7 +1181,8 @@
     position: relative;
     margin-bottom: 2.5rem;
     background: #fff;
-    padding: 5rem 5rem 4rem 5rem;
+    padding: 5rem 2.5rem 4rem 2.5rem;
+    height: 179px;
 }
 
 .review-head img {
@@ -1196,7 +1201,7 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #525252;
+    color: #525252;     
 }
 
 .review-author h4 {
@@ -1251,6 +1256,9 @@
     line-height: 54px;
 }
 
+.count-line {
+    margin: 100px 0 50px 0;
+}
 
 
 
@@ -1276,8 +1284,9 @@
     color: #8C8C8C;
 }
 
-.foot {
-    margin-top: 2rem;
+.foot ul {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .footlink p {
@@ -1285,6 +1294,11 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
+}
+
+#footer {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 
@@ -1349,7 +1363,7 @@
         padding-right: 8rem;
     }
     
-    #communication h4 {
+    #communication h3 {
         margin-top: 5rem;
     }
     .hero-box {
@@ -1418,7 +1432,7 @@
         margin-bottom: 4rem;
     }
     
-    #communication h4 {
+    #communication h3 {
         margin-top: 5rem;
         line-height: 40px;
     }
@@ -1448,6 +1462,10 @@
         line-height: 20px;
         margin-right: 4rem;
     }
+    .section-header {
+        text-align: center;
+    }
+
 
     
 }
@@ -1481,7 +1499,7 @@
         margin-right: 3.8rem;
     }
 
-    #get-invite h4 {
+    #get-invite h3 {
         margin-top: 0rem;
     }    
     #feature {
@@ -1498,7 +1516,7 @@
     .count-form-box {
         padding: 0 2rem;
     }
-    #communication h4 {
+    #communication h3 {
         margin-top: 0;
     }
     .left-text , .right-text {
@@ -1642,6 +1660,15 @@
 }
 
 @media(max-width : 576px) {
+    .count-line {
+        margin: 54px 0 14px 0;
+    }
+    
+    .review-thumb {
+        padding: 5rem 4rem 4rem 4rem;
+        height: 179px;
+    }
+    
     .feature-box h4 {
         font-size: 18px;
         line-height: 27px;
