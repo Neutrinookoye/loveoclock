@@ -57,7 +57,7 @@
 
 .navbar-toggler span {
     display: block;
-    background-color: #ffaead;
+    background-color: #fff;
     height: 3px;
     width: 25px;
     margin-top: 4px;
@@ -94,6 +94,7 @@
   transform: rotate(135deg);
   opacity: 0.9;
   width: 25px;
+  background-color: #ffaead ;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
@@ -103,6 +104,7 @@
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    background-color: #ffaead;
     width: 25px;
     position: absolute;
     left: 12px;
@@ -110,6 +112,10 @@
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     opacity: 0.9;
+}
+
+.white-logo{
+    display: none;
 }
 
 
@@ -144,7 +150,7 @@
 }
 
 .hero-form-input:focus {
-    border: none;
+    border: 1px solid  #1f1f1f;
     box-shadow: none;
 }
 
@@ -373,6 +379,11 @@
     }
 }
 
+.hero-box h2 {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 54px;    
+}
 
 
 
@@ -405,7 +416,7 @@
 }
 
 .feature-box h4 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     padding: 1rem 0;
@@ -419,7 +430,6 @@
 }
 
 .section-header h3 {
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;
@@ -516,7 +526,7 @@
 
 
 /* Soul Communication */
-#communiation {
+#communication {
     padding: 3rem 0 0 0;
 }
 
@@ -547,7 +557,7 @@
     padding-right: 15rem;
 }
 
-#communiation h4 {
+#communication h4 {
     margin-top: 10rem;
     font-style: normal;
     font-weight: 500;
@@ -570,6 +580,11 @@
 
 .celeb-top {
     padding-top: 11rem;
+}
+
+.celeb-top .para1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .celeb-img {
@@ -1198,17 +1213,42 @@
 
 
 
+
+
 /* Coundown Timer */
 #demo {
-    font-size: 4rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 108px;
+    color: #525252;
 }
 
 #countdown {
-    padding: 2.5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .count-form-box {
     padding: 0 23rem;
+}
+
+#countdown .day:last-child {
+    margin-right: 0;
+}
+
+.day {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 5.2rem;
+}
+
+.get-head {
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
 }
 
 
@@ -1309,12 +1349,17 @@
         padding-right: 8rem;
     }
     
-    #communiation h4 {
+    #communication h4 {
         margin-top: 5rem;
     }
     .hero-box {
         position: absolute;
         padding: 18rem 28rem 0 0;
+    }
+    .day {
+        font-size: 18px;
+        line-height: 27px;
+        margin-right: 4.5rem;
     }
     
         
@@ -1322,6 +1367,14 @@
 }
 
 @media(max-width : 992px) {
+    #demo {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 90px;
+        color: #525252;
+    }
+    
     .celeb-top {
         padding-top: 6rem;
         margin-bottom: 4rem;
@@ -1365,7 +1418,7 @@
         margin-bottom: 4rem;
     }
     
-    #communiation h4 {
+    #communication h4 {
         margin-top: 5rem;
         line-height: 40px;
     }
@@ -1373,9 +1426,6 @@
         padding: 18rem 15rem 0 0;
         z-index: 999;
     }
-    #demo {
-        font-size: 3rem;
-    }  
     .cab1 {
         position: absolute;
         right: 16.3rem;
@@ -1393,10 +1443,51 @@
         right: 6rem;
         bottom: .5rem;
     }     
+    .day {
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 4rem;
+    }
+
     
 }
 
 @media(max-width : 767px) {
+    .navbar-reduce {
+        background: rgba(0 , 0 , 0 , .9);
+        backdrop-filter: blur(.5rem);
+    }
+
+    .js-scroll {
+        color: #fff;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .white-logo {
+        display: inline-block;
+    }
+
+    .logo {
+        width: 10rem !important;
+    }
+
+    .dark-logo {
+        display: none;
+    }
+
+    .day {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 3.8rem;
+    }
+
+    #get-invite h4 {
+        margin-top: 0rem;
+    }    
+    #feature {
+        background: #fff;
+        padding: 3rem 0 0 0;
+    }
     .celeb-top {
         padding-top: 1rem;
     }
@@ -1405,10 +1496,10 @@
         left: 42%;
     }
     .count-form-box {
-        padding: 0;
+        padding: 0 2rem;
     }
-    #communiation h4 {
-        margin-top: 3rem;
+    #communication h4 {
+        margin-top: 0;
     }
     .left-text , .right-text {
         text-align: center;
@@ -1421,11 +1512,21 @@
         z-index: 1;
         position: relative;
     }
+    #hero .hero-form-input {
+        font-size: 13px;
+        line-height: 19px;
+        height: 46px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(31, 31, 31, 0.15);
+        color: #fff;
+    } 
+
     .hero-form-input {
         font-size: 13px;
         line-height: 19px;
         height: 46px;
-    } 
+    }    
+
     .btn-pink {
         height: 46px;
     }
@@ -1439,7 +1540,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.56);
+        background: rgba(0, 0, 0, 0.7);
         z-index: 99;
     }
     .hero-img {
@@ -1541,6 +1642,15 @@
 }
 
 @media(max-width : 576px) {
+    .feature-box h4 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .feature-box p {
+        font-size: 14px;
+        line-height: 21px;    }
+    
     .pa1 , .pa2 , .pa3 , .pa4 , .pa5 , .pa6 , .pa7  , .pa8 , .pa9 , .pa10 {
         width: 20.62px !important;
     }    
@@ -1589,16 +1699,16 @@
         font-size: 13px;
         line-height: 19px;
     }
-    .logo {
-        width: 10rem !important;
-    }
     .hero-img {
-        height: 500px !important;
+        height: 550px !important;
     }
     #demo {
-        font-size: 2.5rem;
+        font-size: 48px;
+        line-height: 72px;
     }    
     .get-head {
+        font-style: normal;
+        font-weight: normal;
         font-size: 24px;
         line-height: 36px;
     }
@@ -1615,9 +1725,14 @@
         width: auto ;
         height: 255px !important ;
     }
-    .section-header h4 , .section-header h3 {
+    .section-header h3  {
+        margin-bottom: 1rem;
         font-size: 24px;
         line-height: 36px;
+    }
+    .section-header h4 {
+        font-size: 18px;
+        line-height: 27px;
     }
     .section-header p {
         font-size: 14px;
@@ -1629,6 +1744,21 @@
     .celeb-box {
         text-align: center;
         padding-top: 3rem;
+    }
+    .hero-box h2 {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;    
+    }
+    .hero-box , .feature-box p , .footlink , .get-head , #get-invite .section-header , .comm-body , .celeb-top , #review .section-header{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .day {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin-right: 3.2rem;
     }
     
 
