@@ -135,8 +135,17 @@
     border-radius: 5rem 0 0 5rem;
     font-size: 18px;
     line-height: 27px;
-    color: rgba(82, 82, 82, 0.31);
     height: 60px;
+    color: #1f1f1f;
+}
+
+.hero-form-input::placeholder {
+    color: rgba(82, 82, 82, 0.31);
+}
+
+.hero-form-input:focus {
+    border: none;
+    box-shadow: none;
 }
 
 .img-box {
@@ -151,7 +160,10 @@
     background: #ffaead;
     color: white;
     border: 0.1rem solid #ffaead;
+    font-size: 18px;
+    line-height: 27px;
 }
+
 
 .hero-box {
     position: absolute;
@@ -173,8 +185,8 @@
 .ab3 {
     right: -7rem;
     bottom: -7rem;
-    -webkit-animation: abs3 10s linear infinite;
-    animation: abs3 10s linear infinite;  
+    -webkit-animation: abs3 4s linear infinite;
+    animation: abs3 4s linear infinite;  
 }
 
 @-webkit-keyframes abs3 {
@@ -204,8 +216,8 @@
 .ab1 {
     right: -1rem;
     bottom: 1rem;
-    -webkit-animation: abs1 10s linear infinite;
-    animation: abs1 10s linear infinite;  
+    -webkit-animation: abs1 4s linear infinite;
+    animation: abs1 4s linear infinite;  
 }
 
 @-webkit-keyframes abs1 {
@@ -236,8 +248,8 @@
 .ab2 {
     right: 7rem;
     bottom: 7rem;
-    -webkit-animation: abs2 10s linear infinite;
-    animation: abs2 10s linear infinite;  
+    -webkit-animation: abs2 4s linear infinite;
+    animation: abs2 4s linear infinite;  
 }
 
 @-webkit-keyframes abs2 {
@@ -267,8 +279,8 @@
 .ab4 {
     right: 5rem;
     bottom: 7rem;
-    -webkit-animation: abs4 10s linear infinite;
-    animation: abs4 10s linear infinite;  
+    -webkit-animation: abs4 4s linear infinite;
+    animation: abs4 4s linear infinite;  
 }
 
 @-webkit-keyframes abs4 {
@@ -299,8 +311,8 @@
 .ab5 {
     right: -7rem;
     bottom: -5rem;
-    -webkit-animation: abs5 10s linear infinite;
-    animation: abs5 10s linear infinite;  
+    -webkit-animation: abs5 4s linear infinite;
+    animation: abs5 4s linear infinite;  
 
 }
 
@@ -332,8 +344,8 @@
 .ab6 {
     right: -2.5rem;
     bottom: -1rem;
-    -webkit-animation: abs6 10s linear infinite;
-    animation: abs6 10s linear infinite;  
+    -webkit-animation: abs6 4s linear infinite;
+    animation: abs6 4s linear infinite;  
 
 }
 
@@ -369,17 +381,18 @@
     background: url('plugins/images/Rectangle\ 74.jpg') center center no-repeat;
     background-size: cover;
     padding: 2rem 0;
-    position: relative;
+    /* position: relative; */
 }
 
 .swiper-container {
-    width: 300px;
+    width: 100%;
     height: 300px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
+}
+
+.sc-con {
+    position: relative;
+    padding: 3rem 0;
 }
 
 
@@ -419,7 +432,7 @@
 }
 
 .feature-img {
-    transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;
     background: transparent;
     padding: .6rem;
 }
@@ -507,13 +520,44 @@
     padding: 3rem 0 0 0;
 }
 
+.comm-img-box {
+    position: relative;
+}
+
+.cab1 {
+    position: absolute;
+    right: 12.3rem;
+    bottom: .5rem;
+}
+
+.cab2 {
+    position: absolute;
+    right: 10.8em;
+    bottom: .5rem;
+}
+
+.cab3 {
+    position: absolute;
+    right: 2rem;
+    bottom: .5rem;
+}
+
+
+.comm-body {
+    padding-right: 15rem;
+}
+
 #communiation h4 {
-    margin-top: 18rem;
+    margin-top: 10rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;    
 }
 
 .comm-img {
     width: auto;
-    height: 575px;
+    height: 575px !important;
 }
 
 
@@ -522,6 +566,15 @@
 /* Celebrity section */
 #celebrity {
     padding: 7rem 0 0rem 0;
+}
+
+.celeb-top {
+    padding-top: 11rem;
+}
+
+.celeb-img {
+    width: 100%;
+    height: 309px;
 }
 
 .celeb-box {
@@ -536,8 +589,8 @@
 .pa1 {
     left: 12rem;
     top: 21rem;
-    -webkit-animation: pas1 12s linear infinite;
-    animation: pas1 12s linear infinite;  
+    -webkit-animation: pas1 2s linear infinite;
+    animation: pas1 2s linear infinite;  
 
 }
 
@@ -589,8 +642,8 @@
 .pa2 {
     left: 12rem;
     top: 16rem;
-    -webkit-animation: pas2 9s linear infinite;
-    animation: pas2 9s linear infinite;  
+    -webkit-animation: pas2 3s linear infinite;
+    animation: pas2 3s linear infinite;  
 }
 
 @-webkit-keyframes pas2 {
@@ -640,8 +693,8 @@
 .pa3 {
     left: 8rem;
     top: 19rem;
-    -webkit-animation: pas3 10s linear infinite;
-    animation: pas3 10s linear infinite;  
+    -webkit-animation: pas3 4s linear infinite;
+    animation: pas3 4s linear infinite;  
 }
 
 @-webkit-keyframes pas3 {
@@ -691,8 +744,8 @@
 .pa4 {
     left: 4rem;
     top: 9rem;
-    -webkit-animation: pas4 12s linear infinite;
-    animation: pas4 12s linear infinite;  
+    -webkit-animation: pas4 2s linear infinite;
+    animation: pas4 2s linear infinite;  
 }
 
 @-webkit-keyframes pas4 {
@@ -742,8 +795,8 @@
 .pa5 {
     left: 14rem;
     top: 12rem;
-    -webkit-animation: pas5 7.5s linear infinite;
-    animation: pas5 7.5s linear infinite;  
+    -webkit-animation: pas5 3s linear infinite;
+    animation: pas5 3s linear infinite;  
 }
 
 @-webkit-keyframes pas5 {
@@ -793,8 +846,8 @@
 .pa6 {
     left: 8rem;
     top: 10rem;
-    -webkit-animation: pas6 11s linear infinite;
-    animation: pas6 11s linear infinite;  
+    -webkit-animation: pas 4s linear infinite;
+    animation: pas 4s linear infinite;  
 }
 
 @-webkit-keyframes pas6 {
@@ -844,8 +897,8 @@
 .pa7 {
     left: 13rem;
     top: 7rem;
-    -webkit-animation: pas7 9s linear infinite;
-    animation: pas7 9s linear infinite;  
+    -webkit-animation: pas7 2s linear infinite;
+    animation: pas7 2s linear infinite;  
 }
 
 @-webkit-keyframes pas7 {
@@ -895,8 +948,8 @@
 .pa8 {
     left: 2rem;
     top: 14rem;
-    -webkit-animation: pas8 6s linear infinite;
-    animation: pas8 6s linear infinite;  
+    -webkit-animation: pas8 3s linear infinite;
+    animation: pas8 3s linear infinite;  
 }
 
 @-webkit-keyframes pas8 {
@@ -946,8 +999,8 @@
 .pa9 {
     left: 2rem;
     top: 2rem;
-    -webkit-animation: pas9 6s linear infinite;
-    animation: pas9 6s linear infinite;  
+    -webkit-animation: pas9 4s linear infinite;
+    animation: pas9 4s linear infinite;  
 }
 
 @-webkit-keyframes pas9 {
@@ -997,8 +1050,8 @@
 .pa10 {
     left: 8rem;
     top: .5rem;
-    -webkit-animation: pas10 6s linear infinite;
-    animation: pas10 6s linear infinite;  
+    -webkit-animation: pas10 2s linear infinite;
+    animation: pas10 2s linear infinite;  
 }
 
 @-webkit-keyframes pas10 {
@@ -1078,19 +1131,19 @@
 .how-icon1 {
     position: absolute;
     top: .8rem;
-    left: 12rem;
+    left: 16rem;
 }
 
 .how-icon2 {
     position: absolute;
     top: .8rem;
-    left: 33.7rem;
+    left: 32.7rem;
 }
 
 .how-icon3 {
     position: absolute;
     top: .8rem;
-    left: 51.5rem;
+    left: 49.5rem;
 }
 
 
@@ -1252,8 +1305,12 @@
         bottom: 17rem;
         right: 8rem;
     }
+    .comm-body {
+        padding-right: 8rem;
+    }
+    
     #communiation h4 {
-        margin-top: 12rem;
+        margin-top: 5rem;
     }
     .hero-box {
         position: absolute;
@@ -1265,6 +1322,11 @@
 }
 
 @media(max-width : 992px) {
+    .celeb-top {
+        padding-top: 6rem;
+        margin-bottom: 4rem;
+    }
+    
     .num-box {
         display: block;
     }
@@ -1297,8 +1359,15 @@
         bottom: 17rem;
         right: 5rem;
     }
+    .comm-body {
+        padding-right: 0;
+        text-align: center ;
+        margin-bottom: 4rem;
+    }
+    
     #communiation h4 {
         margin-top: 5rem;
+        line-height: 40px;
     }
     .hero-box {
         padding: 18rem 15rem 0 0;
@@ -1306,11 +1375,32 @@
     }
     #demo {
         font-size: 3rem;
-    }    
+    }  
+    .cab1 {
+        position: absolute;
+        right: 16.3rem;
+        bottom: .5rem;
+    }
+    
+    .cab2 {
+        position: absolute;
+        right: 14.8em;
+        bottom: .5rem;
+    }
+    
+    .cab3 {
+        position: absolute;
+        right: 6rem;
+        bottom: .5rem;
+    }     
     
 }
 
 @media(max-width : 767px) {
+    .celeb-top {
+        padding-top: 1rem;
+    }
+
     .review-head img {
         left: 42%;
     }
@@ -1323,10 +1413,6 @@
     .left-text , .right-text {
         text-align: center;
     }
-    .comm-img {
-        width: 100% ;
-        height: 450px !important ;
-    }
     .section-header {
         text-align: center;
     }
@@ -1338,11 +1424,11 @@
     .hero-form-input {
         font-size: 13px;
         line-height: 19px;
-        color: #Fff;  
-        background: rgba(255, 255, 255, 0.2);
-        border: 1px solid rgba(31, 31, 31, 0.15);
-        box-sizing: border-box;      
+        height: 46px;
     } 
+    .btn-pink {
+        height: 46px;
+    }
     .hero-form-input::placeholder{
         color: #F5F6F7;
     }   
@@ -1431,11 +1517,78 @@
     #review .owl-dot.active {
       background-color: #333;
     }
-        
+    .cab1 {
+        position: absolute;
+        right: 11.6rem;
+        bottom: 1rem;
+        width: 200px !important;
+    }
+    
+    .cab2 {
+        position: absolute;
+        right: 11rem;
+        bottom: 1rem;
+        width: 220px !important;
+    }
+    
+    .cab3 {
+        position: absolute;
+        right: 3.9rem;
+        bottom: 1rem;
+        width: 450px !important;
+    }     
     
 }
 
 @media(max-width : 576px) {
+    .pa1 , .pa2 , .pa3 , .pa4 , .pa5 , .pa6 , .pa7  , .pa8 , .pa9 , .pa10 {
+        width: 20.62px !important;
+    }    
+    .pa1 {
+        left: 50%;
+        top: 3rem;
+    }
+    .pa2 {
+        left: 60%;
+        top: 6rem;
+    }
+    .pa3 {
+        left: 40%;
+        top: 5rem;
+    }
+    .pa4 {
+        left: 36%;
+        top: 7rem;
+    }
+    .pa5 {
+        left: 56%;
+        top: 4rem;
+    }
+    .pa6 {
+        left: 55%;
+        top: 5rem;
+    }
+    .pa7 {
+        left: 50%;
+        top: 6rem;
+    }
+    .pa8 {
+        left: 50%;
+        top: 3rem;
+    }
+    .pa9 {
+        left: 50%;
+        top: 6rem;
+    }
+    .pa10 {
+        left: 50%;
+        top: 5rem;
+    }
+    .btn-pink {
+        padding: .5rem 1.2rem;
+        font-size: 13px;
+        line-height: 19px;
+    }
     .logo {
         width: 10rem !important;
     }
@@ -1449,6 +1602,35 @@
         font-size: 24px;
         line-height: 36px;
     }
+    .cab3 {
+       display: none;
+    }
+    .cab2 {
+        display: none;
+    }
+    .cab1 {
+        display: none;
+    }
+    .comm-img {
+        width: auto ;
+        height: 255px !important ;
+    }
+    .section-header h4 , .section-header h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .section-header p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .celeb-img {
+        width: 224px !important;
+    }
+    .celeb-box {
+        text-align: center;
+        padding-top: 3rem;
+    }
+    
 
 }
 
