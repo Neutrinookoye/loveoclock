@@ -11,6 +11,6 @@ define("DB" , "acecampus") ;
 $DBF = array(DB_HOST , DB_USER , DB_PW , DB) ; */
 define("DB_HOST" , "localhost") ;
 define("DB_USER" , "root") ;
-define("DB_PW" , "") ;
-define("DB" , "testing") ;
+define("DB_PW" , "donmaccy123") ;
+define("DB" , "practice") ;
 $DBF = array(DB_HOST , DB_USER , DB_PW , DB) ; 

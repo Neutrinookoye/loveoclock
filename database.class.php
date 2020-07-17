@@ -8,7 +8,7 @@ class Database {
 	public function __construct($dataFile) {
 		$this->hn = $dataFile[0] ; 
 		$this->un = $dataFile[1] ; 
-		$this->pw = $dataFile[2] ; 
+		$this->pw = $dataFile[2] ;  
 		$this->db = $dataFile[3] ; 
 	}
 	public function connect() {

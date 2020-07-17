@@ -27,24 +27,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// let mySwiper = new Swiper('.swiper-container', {
-//   effect: 'cube',
-//   grabCursor: true,
-//   cubeEffect: {
-//     shadow: true,
-//     slideShadows: true,
-//     shadowOffset: 20,
-//     shadowScale: 0.94,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-// },
-// })
 
 
 !(function($) {
@@ -111,7 +93,30 @@ var x = setInterval(function() {
     }
   });
 
-
+  // App screenshot carousel (uses the Owl Carousel library)
+  $('.screenshot-carousel').owlCarousel({
+    animateOut: 'fadeOut',
+    dots : true ,
+    loop: true,
+    autoplayHoverPause: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      767: {
+        items: 2,
+	  },
+      992: {
+        items: 3,
+      },
+      1200: {
+        items: 5,
+      }  
+    }
+  });
 
 
 

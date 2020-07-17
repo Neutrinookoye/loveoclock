@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     else {
                         echo("Please enter the field correctly") ;
                     }
-                }
+                } 
                 else {
 			        echo("This email already exist") ;
                 }
